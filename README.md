@@ -1,9 +1,5 @@
 # Customer Purchase Price Engine
 
-Please run
-    PYTHONPATH=. streamlit run app/streamlit_app.py
-in terminal to access webapp
-
 This project provides a machine learning–powered pricing engine to recommend optimal ticket purchase offers for customers looking to sell their tickets on a secondary marketplace.
 
 ---
@@ -11,7 +7,7 @@ This project provides a machine learning–powered pricing engine to recommend o
 ## Project Structure
 
 ```
-customer_pricing_engine/
+ticket_cricket_price_engine/
 ├── app/
 │   ├── run_engine.py              # Command-line script to test a sample case
 │   └── streamlit_app.py          # Interactive Streamlit demo app
@@ -37,8 +33,8 @@ customer_pricing_engine/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/customer_pricing_engine.git
-cd customer_pricing_engine
+git clone https://github.com/heathlh/ticket_cricket_price_engine.git
+cd ticket_cricket_price_engine
 ```
 
 ### 2. Create Virtual Environment (Optional but Recommended)
@@ -130,4 +126,4 @@ This script reads unique values for `Event Type`, `Category`, `State`, `Venue`, 
 ---
 
 ## Contact
-For questions or contributions, please reach out to [Your Name] at [your.email@example.com].
+For questions or contributions, please reach out to Heath Liao at heathlh1018@gmail.com.
