@@ -8,11 +8,6 @@ This project provides a machine learning–powered pricing engine to recommend o
 
 ---
 
-# Customer Purchase Price Engine
-
-This project provides a machine learning–powered pricing engine to recommend optimal ticket purchase offers for customers looking to sell their tickets on a secondary marketplace.
-
----
 
 ## Project Structure
 
