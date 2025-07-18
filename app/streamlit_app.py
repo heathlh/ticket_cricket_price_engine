@@ -53,6 +53,10 @@ if submitted:
     )
 
     st.success("🎯 Offer Recommendation")
-    st.write(f"**Recommended Offer:** ${offer['recommended_offer']}")
+    st.write(f"**Recommended Offer (per ticket):** ${offer['recommended_offer']:.2f}")
     st.write(f"**Expected Margin:** {offer['expected_margin']}%")
-    st.write(f"**Confidence Level:** {offer['confidence_level'] * 100}%")
+    st.write(f"**Confidence Level:** {offer['confidence_level'] * 100:.1f}%")
+
+    st.metric("Predicted Resale Price (per ticket)", f"${offer['predicted_resale_price']:.2f}")
+    st.metric("Expected Profit (per ticket)", f"${offer['expected_profit']:.2f}")
+
