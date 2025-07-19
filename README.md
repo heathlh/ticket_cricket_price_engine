@@ -135,24 +135,15 @@ All dropdown options are pre-extracted from cleaned_invoice_data.csv.
 
 ---
 
-##  Development Utilities
+## Development Utilities
 
 ### Extract Dropdown Options
-bash
+```bash
 python scripts/extract_dropdown_options.py
-
- Generates CSVs of unique values (venue, category, etc.) for dropdown inputs.
-
----
-
-##  Author
-
-Heath Liao  
-Data Science Intern
-heathlh1018gmail.com  
+```
+This script reads unique values for `Event Type`, `Category`, `State`, `Venue`, and `Performer` and saves them as CSVs in `data/options/`.
 
 ---
 
-##  License
-
-MIT License. Feel free to fork, adapt, and contribute
+## Contact
+For questions or contributions, please reach out to Heath Liao at heathlh1018@gmail.com.
