@@ -29,38 +29,38 @@ ticket_cricket_price_engine/
 
 ---
 
-##  Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
-bash
+```bash
 git clone https://github.com/heathlh/ticket_cricket_price_engine.git
 cd ticket_cricket_price_engine
+```
 
-
-### 2. Set Up Environment
-bash
+### 2. Create Virtual Environment (Optional but Recommended)
+```bash
 python3 -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-
+source .venv/bin/activate  # On Windows use .venv\Scripts\activate
+```
 
 ### 3. Install Dependencies
-bash
+```bash
 pip install -r requirements.txt
+```
 
-
-### 4. Run the Engine (Sample Scenario)
-bash
+### 4. Run the Engine on a Sample Case
+```bash
 python app/run_engine.py
+```
 
+### 5. Start the Streamlit App
+```bash
+PYTHONPATH=. streamlit run app/streamlit_app.py
+```
 
-### 5. Launch Streamlit App
-bash
-PYTHONPATH. streamlit run app/streamlit_app.py
-
- ℹ Tip: If you get ModuleNotFoundError: No module named 'engine', ensure PYTHONPATH. is set.
+> If you encounter `ModuleNotFoundError: No module named 'engine'`, make sure to use `PYTHONPATH=.` when launching Streamlit.
 
 ---
-
 ##  How the Engine Works
 
 The system trains two Random Forest models:
