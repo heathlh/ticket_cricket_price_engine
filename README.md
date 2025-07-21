@@ -8,24 +8,24 @@ A machine learningpowered pricing engine to recommend optimal ticket purchase of
 
 
 ticket_cricket_price_engine/
- app/
-    run_engine.py              # CLI for model training  scenario testing
-    streamlit_app.py           # Interactive Streamlit demo for user input
- data/
-    cleaned_invoice_data.csv   # Historical ticket transaction data
-    options/                   # Dropdown option CSVs (venue, category, etc.)
- engine/
-    config.py                  # Default business configs (margins, thresholds)
-    enhanced_seat_scorer.py    # in Testing progress
-    features.py                # Feature engineering  market intelligence
-    models.py                  # Model training, tuning  evaluation
-    pricing_engine.py          # Core recommendation engine
- models/                        # Trained model artifacts (.pkl)
- scripts/
-    extract_dropdown_options.py # Extracts dropdown choices for UI
- requirements.txt
- README.md
-
+├── app/
+│   ├── run_engine.py              # Command-line script to test a sample case
+│   └── streamlit_app.py          # Interactive Streamlit demo app
+├── data/
+│   ├── cleaned_invoice_data.csv  # Historical ticket transaction data
+│   └── options/                  # Dropdown options extracted from data
+├── engine/
+│   ├── __init__.py
+│   ├── config.py                 # Default margin & category assumptions
+│   ├── features.py              # Feature generation and market intelligence
+│   ├── models.py                # Model training, evaluation, and persistence
+│   └── pricing_engine.py        # Core logic for offer recommendation
+├── models/                      # Folder to store trained model .pkl files
+├── scripts/
+│   └── extract_dropdown_options.py  # Script to extract unique field values
+├── requirements.txt
+└── README.md
+```
 
 ---
 
